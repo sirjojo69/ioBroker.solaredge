@@ -1,0 +1,98 @@
+{
+	"common": {
+		"name": "solaredge",
+		"version": "0.0.1",
+		"news": {
+			"0.0.1": {
+				"en": "initial release",
+				"de": "Erstveröffentlichung",
+				"ru": "Начальная версия",
+				"pt": "lançamento inicial",
+				"nl": "Eerste uitgave",
+				"fr": "Première version",
+				"it": "Versione iniziale",
+				"es": "Versión inicial",
+				"pl": "Pierwsze wydanie",
+				"zh-cn": "首次出版"
+			}
+		},
+		"title": "solaredge",
+		"titleLang": {
+			"en": "solaredge",
+			"de": "solaredge",
+			"ru": "solaredge",
+			"pt": "solaredge",
+			"nl": "solaredge",
+			"fr": "solaredge",
+			"it": "solaredge",
+			"es": "solaredge",
+			"pl": "solaredge",
+			"zh-cn": "solaredge"
+		},
+		"desc": {
+			"en": "Abfragen der Leistungsdaten einer PV Anlage mit Solaredge Wechselrichter mittels Solaredge Monitoring API",
+			"de": "Abfragen der Leistungsdaten einer PV Anlage mit Solaredge Wechselrichter mittels Solaredge Monitoring API",
+			"ru": "Abfragen der Leistungsdaten einer PV Anlage mit Solaredge Wechselrichter mittels Solaredge Monitoring API",
+			"pt": "Abfragen der Leistungsdaten einer PV Anlage mit Solaredge Wechselrichter mittels Solaredge Monitoring API",
+			"nl": "Abfragen der Leistungsdaten einer PV Anlage mit Solaredge Wechselrichter mittels Solaredge Monitoring API",
+			"fr": "Abfragen der Leistungsdaten einer PV Anlage mit Solaredge Wechselrichter mittels Solaredge Monitoring API",
+			"it": "Abfragen der Leistungsdaten einer PV Anlage mit Solaredge Wechselrichter mittels Solaredge Monitoring API",
+			"es": "Abfragen der Leistungsdaten einer PV Anlage mit Solaredge Wechselrichter mittels Solaredge Monitoring API",
+			"pl": "Abfragen der Leistungsdaten einer PV Anlage mit Solaredge Wechselrichter mittels Solaredge Monitoring API",
+			"zh-cn": "Abfragen der Leistungsdaten einer PV Anlage mit Solaredge Wechselrichter mittels Solaredge Monitoring API"
+		},
+		"authors": [
+			"Gereon Howe <gtj.howe@gmx.de>"
+		],
+		"keywords": [
+			"solar",
+			"pv",
+			"solaredge"
+		],
+		"license": "MIT",
+		"platform": "Javascript/Node.js",
+		"main": "main.js",
+		"icon": "solaredge.png",
+		"enabled": true,
+		"extIcon": "https://raw.githubusercontent.com/sirjojo69/ioBroker.solaredge/master/admin/solaredge.png",
+		"readme": "https://github.com/sirjojo69/ioBroker.solaredge/blob/master/README.md",
+		"loglevel": "info",
+		"mode": "schedule",
+		"type": "energy",
+		"compact": true,
+		"materialize": true,
+		"dependencies": [
+			{
+				"js-controller": ">=1.4.2"
+			}
+		]
+	},
+	"native": {
+		"option1": true,
+		"option2": "42"
+	},
+	"objects": [],
+	"instanceObjects": [
+		{
+			"_id": "info",
+			"type": "channel",
+			"common": {
+				"name": "Information"
+			},
+			"native": {}
+		},
+		{
+			"_id": "info.connection",
+			"type": "state",
+			"common": {
+				"role": "indicator.connected",
+				"name": "Device or service connected",
+				"type": "boolean",
+				"read": true,
+				"write": false,
+				"def": false
+			},
+			"native": {}
+		}
+	]
+}
